@@ -13,17 +13,53 @@
 
     <ol>
         <li>
-            <p>Qual é a forma geral de uma equação ?</p>
+            <p>Qual é a forma geral de uma equação do segundo grau ?</p>
 
             <ul>
-                <li>
-                    
-                </li>
+                <li><input type="radio" name="q1" value="a"> a + bx + cx^2 = 0 </li>
+                <li><input type="radio" name="q1" value="b"> ax^2 + bx + c = 0 </li>
+                <li><input type="radio" name="q1" value="c"> bx^2 + ax + c = 0 </li>
             </ul>
-
+            <!--adicionar mais 9 exercícios de múltipla escolha aq-->
         </li>
 
     </ol>
+
+    <h2>Resolva as seguintes equações de segundo grau:</h2>
+
+    <form id="equationForm">
+        <p>1. insira os coeficientes da equação: ax^2 + bx + c = 0</p>
+        <label for="coefA">a: </label>
+        <input type="number" id="coefA" name="coefA"></br>
+        <label for="coefB">b: </label>
+        <input type="number" id="coefB" name="coefB"></br>
+        <label for="coefC">c: </label>
+        <input type="number" id="coefC" name="coefC"></br>
+        <button type="button" id="solveEquation">Resolver</button>
+        <p id="result"></p>
+    </form>
+        <!--adicionar mais 2 exercícios de formulário aq-->
+ 
+    <script>
+        const a = parseFloat(document.getElementById('coefA').value);
+        const b = parseFloat(document.getElementById('coefB').value);
+        const c = parseFloat(document.getElementById('coefC').value);
+
+        const discriminante = b * b - 4 * a * c;
+        
+        if(discriminante > 0) {
+            const x1 = (-b + math.sqrt(discriminante))/(2*a);
+            const x2 = (-b - math.sqrt(discriminante))/(2*a);
+            document.getElementById('result').textContent = `Soluções : x1 = $ {x1.toFixed(2)} , x2 = $ {x2.toFixed(2)}`;
+        }else if (discriminante === 0){
+            const x = -b / (2*a);
+            document.getElementById('result').textContent = `Solução unica: x = $ {x.toFixed(2)} `;
+        }else{
+            document.getElementById('result').textContent = `Não há solução real`; 
+        }
+
+
+    </script>
 
 </body>
 </html>
