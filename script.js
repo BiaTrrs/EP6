@@ -17,11 +17,16 @@ function funcao_resposta(){
 
     var resp1 = document.querySelector('input[name="quest_1"]:checked');
     var resp2 = document.querySelector('input[name="quest_2"]:checked');
+    var resp3 = document.querySelector('input[name="quest_3"]:checked');
+    var resp4 = document.querySelector('input[name="quest_4"]:checked');
 
-    if(resp1 && resp2){
+    var contador = 0
+
+    if(resp1 && resp2 && resp3 && resp4){
 
         if(resp1.value == "correta"){
-            document.getElementById(resp_correta_1).innerHTML = "Correta!"  
+            document.getElementById(resp_correta_1).innerHTML = "Correta!" 
+            contador = +1;
         }
 
         else{
@@ -29,32 +34,35 @@ function funcao_resposta(){
         }
 
         if(resp2.value == "correta"){
-            document.getElementById(resp_correta2).innerHTMl = "Correta!"
+            document.getElementById(resp_correta_2).innerHTMl = "Correta!"
+            contador = +1;
         }
 
         else{
-            document.getElementById(resp_errada2).innerHTML = "Errada!"
+            document.getElementById(resp_errada_2).innerHTML = "Errada!"
+        }
+
+        if(resp3.value == "Correta!"){
+            document.getElementById(resp_correta_3).innerHTML = "Correta!"
+            contador = +1;
         }
     
+        else{
+            document.getElementById(resp_errada_3).innerHTML = "Errada!"
+        }
+
+        if(resp4.value == "Correta!"){
+            document.getElementById(resp_correta_4).innerHTML = "Correta!"
+            contador = +1;
+        }
+        else{
+            document.getElementById(resp_errada_4).innerHTML = "Errada!"
+        }
+        document.getElementById("quantos_acertos").innerHTML = "Você acertou" + contador + "questões!";
+
+        else{
+            alert(não deixe questões em branco!)
+        }
     }
     
 }
-
-<script>
-            const a = parseFloat(document.getElementById('coefA').value);
-            const b = parseFloat(document.getElementById('coefB').value);
-            const c = parseFloat(document.getElementById('coefC').value);
-    
-            const discriminante = b * b - 4 * a * c;
-            
-            if(discriminante > 0) {
-                const x1 = (-b + math.sqrt(discriminante))/(2*a);
-                const x2 = (-b - math.sqrt(discriminante))/(2*a);
-                document.getElementById('result').textContent = `Soluções : x1 = $ {x1.toFixed(2)} , x2 = $ {x2.toFixed(2)}`;
-            }else if (discriminante === 0){
-                const x = -b / (2*a);
-                document.getElementById('result').textContent = `Solução unica: x = $ {x.toFixed(2)} `;
-            }else{
-                document.getElementById('result').textContent = `Não há solução real`; 
-            }
-</script>
