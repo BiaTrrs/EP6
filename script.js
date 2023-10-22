@@ -1,4 +1,4 @@
-function iclui_nome() {
+function inclui_nome() {
 
     var nome_variavel= prompt("coloque seu nome:");
     
@@ -59,10 +59,10 @@ function funcao_resposta(){
             document.getElementById(resp_errada_4).innerHTML = "Errada!"
         }
         document.getElementById("quantos_acertos").innerHTML = "Você acertou" + contador + "questões!";
-
-        else{
-            alert(não deixe questões em branco!)
-        }
     }
+    else{
+        alert("não deixe questões em branco!")
+    }
+    
     
 }
