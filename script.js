@@ -1,19 +1,19 @@
-function inclui_nome() {
+function inclui_nome() {/* */
 
-    var nome_variavel= prompt("coloque seu nome:");
+    var nome_variavel= prompt("coloque seu nome:");/* */
     
-    if(nome_variavel){
+    if(nome_variavel){/* */
         document.getElementById("marcação_nome").innerHTML = nome_variavel;
     }
 
-    else{
+    else{/* */
         alert ("Nome não atribuido, preencha o nome.");
         inclui_nome();
     }
 
 }
 
-function funcao_resposta(){
+function funcao_resposta(){/* */
 
     var resp1 = document.querySelector('input[name="quest_1"]:checked');
     var resp2 = document.querySelector('input[name="quest_2"]:checked');
@@ -22,47 +22,52 @@ function funcao_resposta(){
 
     var contador = 0
 
-    if(resp1 && resp2 && resp3 && resp4){
+    if(resp1 && resp2 && resp3 && resp4){/* */
 
-        if(resp1.value == "correta"){
+        if(resp1.value == "correta"){/* */
             document.getElementById(resp_correta_1).innerHTML = "Correta!" 
             contador = +1;
         }
 
-        else{
+        else{/* */
             document.getElementById(resp_errada_1).innerHTML = "Errada!"
         }
 
-        if(resp2.value == "correta"){
+        if(resp2.value == "correta"){/* */
             document.getElementById(resp_correta_2).innerHTMl = "Correta!"
             contador = +1;
         }
 
-        else{
+        else{/* */
             document.getElementById(resp_errada_2).innerHTML = "Errada!"
         }
 
-        if(resp3.value == "Correta!"){
+        if(resp3.value == "Correta!"){/* */
             document.getElementById(resp_correta_3).innerHTML = "Correta!"
             contador = +1;
         }
     
-        else{
+        else{/* */
             document.getElementById(resp_errada_3).innerHTML = "Errada!"
         }
 
-        if(resp4.value == "Correta!"){
+        if(resp4.value == "Correta!"){/* */
             document.getElementById(resp_correta_4).innerHTML = "Correta!"
             contador = +1;
         }
-        else{
+        else{/* */
             document.getElementById(resp_errada_4).innerHTML = "Errada!"
         }
         document.getElementById("quantos_acertos").innerHTML = "Você acertou" + contador + "questões!";
     }
-    else{
+    else{/* */
         alert("não deixe questões em branco!")
     }
     
     
 }
+
+script type="text/javascript"/**/
+    function mudar(objeto , imagem){
+        equacao.scr = imagem
+    }
