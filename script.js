@@ -28,7 +28,7 @@ function funcao_resposta(){/* */
 
     var contador = 0
 
-    if(resp1 && resp2 && resp3 && resp4){/* */
+    if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp10){/* */
 
         if(resp1.value == "correta"){/* */
             document.getElementById(resp_correta_1).innerHTML = "Correta!" 
@@ -96,7 +96,7 @@ function funcao_resposta(){/* */
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_8").innerHTML = "Errada, uma equação de segundo grau pode ter no máximo duas raízes reais, não podendo ter 0 raízes reais ou infinitas raízes reais."
+            document.getElementById("resp_errada_8").innerHTML = "Errada!"
         }
 
         if(resp9.value == "correta"){

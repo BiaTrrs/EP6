@@ -82,7 +82,7 @@ footer{/**/
 }
 
 body{/**/
-    background-color: rgb(255, 226, 226);
+    background-color: rgb(240, 194, 194);
     display: grid;/**/
     grid-template-areas:/**/
     "cabe" "cabe"
@@ -145,4 +145,3 @@ button:hover{
     }
 
 }
-
