@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--controla como um site é exibido em um dispositivo móvel-->
     <link rel="stylesheet" href="style.css"><!--linka o CSS ao HTML-->
     <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'><!--link da fonte utilizada no site-->
-    <title> Matemática do 9 ano (Equação do 2 grau) </title><!--é o título do documento-->
+    <title> Matemática do 9º ano (Equação do 2 grau) </title><!--é o título do documento-->
 </head><!--contem info.não transportadas para o usuário do doc.-->
+
+<body onload="inclui_nome()"><!---->
 
 <header><!--representa um grupo de suporte navegacional-->
     <h1>Equation.Func</h1>
@@ -19,8 +21,9 @@
 
 <main><!--define o conteúdo principal dentro do body em seu doc.-->
 
-
-    <body onload="inclui_nome()"><!---->
+    <a onmouseover="mudar('equacao','equacao1.png')"
+    onmouseout="mudar('equacao','equacao2.png')">
+    <img src="equacao1.png" alt="" id="equacao"></a>
 
         <script src="script.js"></script><!---->
 
@@ -151,11 +154,11 @@
         <form id="equationForm"><!--indica um formulário-->
             <h2>2. Resolver a equação de segundo grau: 2x^2 + 5x - 3 = 0</h2><!--subtítulo-->
             <label for="coefA">a: </label><!---->
-            <input type="number" id="coefA" name="coefA" value="2"><br><!---->
+            <input type="number" id="coefA" name="coefA"><br><!---->
             <label for="coefB">b: </label><!---->
-            <input type="number" id="coefB" name="coefB" value="5"><br><!---->
+            <input type="number" id="coefB" name="coefB"><br><!---->
             <label for="coefC">c: </label><!---->
-            <input type="number" id="coefC" name="coefC" value="-3"><br><!---->
+            <input type="number" id="coefC" name="coefC"><br><!---->
             <button type="button" id="solveEquation">Resolver</button><!--indica um botão-->
             <p id="result"></p><!--nome do botão-->
         </form><!--indica um formulário-->
@@ -172,12 +175,14 @@
             <p id="result"></p><!--nome do botão-->
         </form><!--indica um formulário-->
         
-    </body><!--é o corpo da página-->
+    
 
 </main><!--define o conteúdo principal dentro do body em seu doc.-->
 
 <footer><!--é o rodapé do site-->
     Desenvolved by Bianca Torres and Mariah Eggers @2023 
 </footer><!--é o rodapé do site-->
+
+</body><!--é o corpo da página-->
 
 </html><!--informa o navegador que tipo de estrutura está sendo construída-->
