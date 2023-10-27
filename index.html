@@ -2,10 +2,10 @@
 <html lang="pt-br"><!--ajuda a definir o idioma do elemento-->
 <head><!--contem info.não transportadas para o usuário do doc.-->
     <meta charset="UTF-8"><!--define o conj. de caracteres a ser utilizado na exibição do conteúdo de um site-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!---->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--leva o usuário á um novo URL-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--controla como um site é exibido em um dispositivo móvel-->
     <link rel="stylesheet" href="style.css"><!--linka o CSS ao HTML-->
-    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'><!--link da fonte utilizada no site-->
     <title> Matematica do 9 ano (Equação do 2 grau) </title><!--é o título do documento-->
 </head><!--contem info.não transportadas para o usuário do doc.-->
 
@@ -24,7 +24,7 @@
 
         <p id="marcacao_nome"></p><!---->
 
-        <form><!--representa um formulário-->
+        <form><!--indica um formulário-->
             <ol><!---->
                 <li><!---->
                     <ul><!---->
@@ -130,52 +130,52 @@
             </ol><!---->
 
             <p id="quantos_acertos"></p><!---->
-                <button type="button" onclick="funcao_resposta()">Responder</button><!---->
+                <button type="button" onclick="funcao_resposta()">Responder</button><!--indica um botão-->
 
-        </form><!--representa um formulário-->
+        </form><!--indica um formulário-->
     
-        <form id="equationForm"><!---->
-            <h2>1. insira os coeficientes da equação: ax^2 + bx + c = 0</h2><!---->
+        <form id="equationForm"><!--indica um formulário-->
+            <h2>1. insira os coeficientes da equação: ax^2 + bx + c = 0</h2><!--subtítulo-->
             <label for="coefA">a: </label><!---->
             <input type="number" id="coefA" name="coefA"></br><!---->
             <label for="coefB">b: </label><!---->
             <input type="number" id="coefB" name="coefB"></br><!---->
             <label for="coefC">c: </label><!---->
             <input type="number" id="coefC" name="coefC"></br><!---->
-            <button type="button" id="solveEquation">Resolver</button><!---->
-            <p id="result"></p><!---->
-        </form><!--representa um formulário-->
+            <button type="button" id="solveEquation">Resolver</button><!--indica um botão-->
+            <p id="result"></p><!--nome do botão-->
+        </form><!--indica um formulário-->
             
-        <form id="equationForm"><!---->
-            <h2>2. insira os coeficientes da equação: ax^2 + bx + c = 0</h2><!---->
+        <form id="equationForm"><!--indica um formulário-->
+            <h2>2. Resolver a equação de segundo grau: 2x^2 + 5x - 3 = 0</h2><!--subtítulo-->
+            <label for="coefA">a: </label><!---->
+            <input type="number" id="coefA" name="coefA" value="2"><br><!---->
+            <label for="coefB">b: </label><!---->
+            <input type="number" id="coefB" name="coefB" value="5"><br><!---->
+            <label for="coefC">c: </label><!---->
+            <input type="number" id="coefC" name="coefC" value="-3"><br><!---->
+            <button type="button" id="solveEquation1">Resolver</button><!--indica um botão-->
+            <p id="result"></p><!--nome do botão-->
+        </form><!--indica um formulário-->
+        
+        <form id="equationForm"><!--indica um formulário-->
+            <h2>3. Insira os coeficientes da equação: 2x^2 - 5x + 3 = 0</h2><!--subtítulo-->
             <label for="coefA">a: </label><!---->
             <input type="number" id="coefA" name="coefA"></br><!---->
             <label for="coefB">b: </label><!---->
             <input type="number" id="coefB" name="coefB"></br><!---->
             <label for="coefC">c: </label><!---->
             <input type="number" id="coefC" name="coefC"></br><!---->
-            <button type="button" id="solveEquation">Resolver</button><!---->
-            <p id="result"></p><!---->
-        </form><!--representa um formulário-->
-
-        <form id="equationForm">
-            <h2>3. Insira os coeficientes da equação: 2x^2 - 5x + 3 = 0</h2><!---->
-            <label for="coefA">a: </label>
-            <input type="number" id="coefA" name="coefA"></br>
-            <label for="coefB">b: </label>
-            <input type="number" id="coefB" name="coefB"></br>
-            <label for="coefC">c: </label>
-            <input type="number" id="coefC" name="coefC"></br>
-            <button type="button" id="solveEquation1">Resolver</button>
-            <p id="result"></p><!---->
-        </form>
+            <button type="button" id="solveEquation1">Resolver</button><!--indica um botão-->
+            <p id="result"></p><!--nome do botão-->
+        </form><!--indica um formulário-->
         
-     
-    </body><!---->
+    </body><!--é o corpo da página-->
+
 </main><!--define o conteúdo principal dentro do body em seu doc.-->
 
 <footer><!--é o rodapé do site-->
     Desenvolved by Bianca Torres and Mariah Eggers @2023 
 </footer><!--é o rodapé do site-->
 
-</html><!---->
+</html><!--informa o navegador que tipo de estrutura está sendo construída-->
