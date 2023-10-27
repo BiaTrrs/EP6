@@ -85,7 +85,13 @@ footer {
 body {
     background-color: rgb(240, 194, 194); /* Define a cor de fundo do corpo da página */
     display: grid; /* Define um layout de grid para o corpo da página */
-    grid-template-areas: "cabe cabe" "brac brac" "princ princ" "roda roda"; /* Define a estrutura de áreas do grid */
+    grid-template-areas: 
+    "cabe cabe" 
+    "brac brac" 
+    "princ princ" 
+    "roda roda"; 
+    /* Define a estrutura de áreas do grid */
+
     grid-gap: 10px; /* Define o espaço entre as células do grid */
     grid-template-columns: auto auto; /* Define as colunas do grid */
     grid-template-rows: auto auto; /* Define as linhas do grid */
@@ -111,7 +117,13 @@ button:hover {
 
 @media only screen and (max-width: 820px) {
     body {
-        grid-template-areas: "cabe" "brac" "pric" "roda"; /* Layout responsivo para larguras de tela menores */
+        grid-template-areas: 
+        "cabe" 
+        "brac" 
+        "pric" 
+        "roda"; 
+        /* Layout responsivo para larguras de tela menores */
+
         grid-template-columns: 1fr; /* Uma única coluna */
         grid-template-rows: 200px 50px 500px 200px; /* Alturas das linhas */
     }
@@ -119,7 +131,12 @@ button:hover {
 
 @media only screen and (max-width: 480px) {
     body {
-        grid-template-areas: "secn" "prin" "roda"; /* Layout responsivo para larguras de tela muito pequenas */
+        grid-template-areas: 
+        "secn" 
+        "prin" 
+        "roda"; 
+        /* Layout responsivo para larguras de tela muito pequenas */
+
         grid-template-columns: 1fr; /* Uma única coluna */
         grid-template-rows: 100px 500px 100px; /* Alturas das linhas */
     }

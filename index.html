@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--controla como um site é exibido em um dispositivo móvel-->
     <link rel="stylesheet" href="style.css"><!--linka o CSS ao HTML-->
     <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'><!--link da fonte utilizada no site-->
-    <title> Matematica do 9 ano (Equação do 2 grau) </title><!--é o título do documento-->
+    <title> Matemática do 9 ano (Equação do 2 grau) </title><!--é o título do documento-->
 </head><!--contem info.não transportadas para o usuário do doc.-->
 
 <header><!--representa um grupo de suporte navegacional-->
@@ -18,6 +18,8 @@
 </aside><!--define um bloco de conteúdo principal que o cerca, pode estar ou não em uma barra lateral(sidebar)-->
 
 <main><!--define o conteúdo principal dentro do body em seu doc.-->
+
+
     <body onload="inclui_nome()"><!---->
 
         <script src="script.js"></script><!---->
@@ -25,8 +27,8 @@
         <p id="marcacao_nome"></p><!---->
 
         <form><!--indica um formulário-->
-            <ol><!---->
-                <li><!---->
+            <ol><!--lista de itens ordenados-->
+                <li><!--indica um item na lista-->
                     <ul><!---->
                         <h2>Questão 1. Qual é a fórmula geral para encontrar as raízes de uma equação do segundo grau, ax^2 + bx + c = 0 ? </h2><!--subtítulo-->
                         <li><input type="radio" name="quest_1" value="errada"> x = (-b ± √(b^2 - 4ac)) / (2c) </li><!---->
@@ -49,10 +51,10 @@
 
                     <ul><!---->
                         <h2>Questão 3. Quantas soluções reais uma equação do segundo grau pode ter ? </h2><!--subtítulo-->
-                        <li><input type="radio" name="quest_3" value=""> 0 soluções </li><!---->
-                        <li><input type="radio" name="quest_3" value=""> 1 solução </li><!---->
-                        <li><input type="radio" name="quest_3" value=""> 2 soluções </li><!---->
-                        <li><input type="radio" name="quest_3" value=""> Infinitas soluções </li><!---->
+                        <li><input type="radio" name="quest_3" value="errada"> 6 soluções </li><!---->
+                        <li><input type="radio" name="quest_3" value="errada"> 9 solução </li><!---->
+                        <li><input type="radio" name="quest_3" value="correta">0, 1 e 2 soluções </li><!---->
+                        <li><input type="radio" name="quest_3" value="errada"> Finitas soluções </li><!---->
                         <p id="resp_correta_3" class="verde"></p><!---->
                         <p id="resp_errada_3" class="vermelho"></p><!---->
                     </ul><!---->
@@ -126,8 +128,8 @@
                         <p id="resp_correta_10" class="verde"></p><!---->
                         <p id="resp_errada_10" class="vermelho"></p><!---->
                     </ul><!---->
-                </li><!---->
-            </ol><!---->
+                </li><!--indica um item na lista-->
+            </ol><!--lista de itens ordenados-->
 
             <p id="quantos_acertos"></p><!---->
                 <button type="button" onclick="funcao_resposta()">Responder</button><!--indica um botão-->
@@ -154,7 +156,7 @@
             <input type="number" id="coefB" name="coefB" value="5"><br><!---->
             <label for="coefC">c: </label><!---->
             <input type="number" id="coefC" name="coefC" value="-3"><br><!---->
-            <button type="button" id="solveEquation1">Resolver</button><!--indica um botão-->
+            <button type="button" id="solveEquation">Resolver</button><!--indica um botão-->
             <p id="result"></p><!--nome do botão-->
         </form><!--indica um formulário-->
         
@@ -166,7 +168,7 @@
             <input type="number" id="coefB" name="coefB"></br><!---->
             <label for="coefC">c: </label><!---->
             <input type="number" id="coefC" name="coefC"></br><!---->
-            <button type="button" id="solveEquation1">Resolver</button><!--indica um botão-->
+            <button type="button" id="solveEquation">Resolver</button><!--indica um botão-->
             <p id="result"></p><!--nome do botão-->
         </form><!--indica um formulário-->
         
