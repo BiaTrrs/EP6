@@ -57,6 +57,8 @@ input {
     text-align: center; /* Alinha o texto ao centro */
 }
 
+/*CÓDIGO DO MAIN*/
+
 main {
     grid-area: princ; /* Define a área do grid para o conteúdo principal "main" */
     margin: auto; /* Centraliza o conteúdo principal horizontalmente */
@@ -70,7 +72,8 @@ main {
 
 form {
     margin: 40px; /* Define uma margem de 40px para os formulários */
-}
+} 
+/*CÓDIGO DO FOOTER*/
 
 footer {
     grid-area: roda; /* Define a área do grid para o rodapé "footer" */
@@ -81,6 +84,8 @@ footer {
     padding: 30px; /* Adiciona um preenchimento de 30px */
     font-style: garamond; /* Define o estilo da fonte como Garamond */
 }
+
+/*CÓDIGO DO BODY*/
 
 body {
     background-color: rgb(240, 194, 194); /* Define a cor de fundo do corpo da página */
@@ -115,6 +120,8 @@ button:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075); /* Muda a sombra ao passar o mouse sobre o botão */
 }
 
+/*CÓDIGO DA RESPONSIVIDADE*/
+
 @media only screen and (max-width: 820px) {
     body {
         grid-template-areas: 
@@ -130,7 +137,11 @@ button:hover {
 }
 
 @media only screen and (max-width: 480px) {
+    header{
+        font-size: 10px;
+    }
     body {
+        font-size: 7px;
         grid-template-areas: 
         "secn" 
         "prin" 
@@ -149,3 +160,23 @@ button:hover {
         display: none; /* Oculta o cabeçalho em telas muito pequenas */
     }
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .item {
+    flex: 0 0 calc(50% - 10px);
+    margin: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .item {
+      flex: 0 0 calc(100% - 20px);
+    }
+  }
