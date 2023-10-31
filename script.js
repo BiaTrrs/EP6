@@ -48,7 +48,7 @@ function funcao_resposta(){/* */
             document.getElementById("resp_errada_2").innerHTML = "Errada, ela não está relacionada ao discriminante e não é usada para determinar as raízes.";
         }
 
-        if(resp3.value == "Correta!"){
+        if(resp3.value == "correta"){
             document.getElementById("resp_correta_3").innerHTML = "Correta!";
             contador = +1;
         }
@@ -57,7 +57,7 @@ function funcao_resposta(){/* */
             document.getElementById("resp_errada_3").innerHTML = "Errada, pois não refletem as possibilidades reais de soluções para equações do segundo grau. ";
         }
 
-        if(resp4.value == "Correta!"){
+        if(resp4.value == "correta"){
             document.getElementById("resp_correta_4").innerHTML = "Correta!";
             contador = +1;
         }
@@ -68,7 +68,7 @@ function funcao_resposta(){/* */
 
         if(resp5.value == "correta"){
             document.getElementById("resp_correta_5").innerHTML = "Correta!";
-            contador = contador + 1;
+            contador = + 1;
         }
 
         else{
@@ -77,7 +77,7 @@ function funcao_resposta(){/* */
 
         if(resp6.value == "correta"){
             document.getElementById("resp_correta_6").innerHTML = "Correta!";
-            contador = contador + 1;
+            contador = + 1;
 
         }
         else{
@@ -86,7 +86,7 @@ function funcao_resposta(){/* */
 
         if(resp7.value == "correta"){
             document.getElementById("resp_correta_7").innerHTML = "Correta!";
-            contador = contador + 1;
+            contador =  + 1;
         }
 
         else{
@@ -95,7 +95,7 @@ function funcao_resposta(){/* */
 
         if(resp8.value == "correta"){
             document.getElementById("resp_correta_8").innerHTML = "Correta!";
-            contador = contador + 1;
+            contador = + 1;
         }
         else{
             document.getElementById("resp_errada_8").innerHTML = "Errada,a equação não possui soluções reais, mas sim raízes complexas, essa alternativa não apresenta isso ";
@@ -103,7 +103,7 @@ function funcao_resposta(){/* */
 
         if(resp9.value == "correta"){
             document.getElementById("resp_correta_9").innerHTML = "Correta!";
-            contador = contador + 1;
+            contador = + 1;
         }
 
         else{
@@ -112,7 +112,7 @@ function funcao_resposta(){/* */
 
         if(resp10.value == "correta"){
             document.getElementById("resp_correta_10").innerHTML = "Correta!";
-            contador = contador + 1;
+            contador = + 1;
         }
 
         else{
@@ -150,19 +150,28 @@ function verificarRespostas() {
 
         if (discriminant1 > 0) {
             result1.innerHTML = 'Equação 1: Duas raízes reais distintas.';
-        } else if (discriminant1 == 0) {
+        } 
+        
+        else if (discriminant1 == 0) {
             result1.innerHTML = 'Equação 1: Uma raiz real.';
-        } else {
+        } 
+        
+        else {
             result1.innerHTML = 'Equação 1: Nenhuma raiz real.';
         }
 
         if (discriminant2 > 0) {
             result2.innerHTML = 'Equação 2: Duas raízes reais distintas.';
-        } else if (discriminant2 == 0) {
+        } 
+
+        else if (discriminant2 == 0) {
             result2.innerHTML = 'Equação 2: Uma raiz real.';
-        } else {
+        } 
+
+        else {
             result2.innerHTML = 'Equação 2: Nenhuma raiz real.';
         }
+
     } else {
         alert('Não deixe campos em branco!');
     }
@@ -170,5 +179,5 @@ function verificarRespostas() {
 
 /*código da imagem dinamica*/
     function mudar(objeto , imagem){
-        equacao.scr = imagem
+        objeto.scr = imagem;
     }
