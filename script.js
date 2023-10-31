@@ -128,6 +128,47 @@ function funcao_resposta(){/* */
 
 }
 
+function verificarRespostas() {
+    // Equação 1
+    var coefA1 = document.getElementById('coefA1').value;
+    var coefB1 = document.getElementById('coefB1').value;
+    var coefC1 = document.getElementById('coefC1').value;
+    
+    // Equação 2
+    var coefA2 = document.getElementById('coefA2').value;
+    var coefB2 = document.getElementById('coefB2').value;
+    var coefC2 = document.getElementById('coefC2').value;
+
+    // Verifique se todos os campos estão preenchidos
+    if (coefA1 && coefB1 && coefC1 && coefA2 && coefB2 && coefC2) {
+        // Resolve as equações
+        var discriminant1 = coefB1 * coefB1 - 4 * coefA1 * coefC1;
+        var discriminant2 = coefB2 * coefB2 - 4 * coefA2 * coefC2;
+
+        var result1 = document.getElementById('result1');
+        var result2 = document.getElementById('result2');
+
+        if (discriminant1 > 0) {
+            result1.innerHTML = 'Equação 1: Duas raízes reais distintas.';
+        } else if (discriminant1 == 0) {
+            result1.innerHTML = 'Equação 1: Uma raiz real.';
+        } else {
+            result1.innerHTML = 'Equação 1: Nenhuma raiz real.';
+        }
+
+        if (discriminant2 > 0) {
+            result2.innerHTML = 'Equação 2: Duas raízes reais distintas.';
+        } else if (discriminant2 == 0) {
+            result2.innerHTML = 'Equação 2: Uma raiz real.';
+        } else {
+            result2.innerHTML = 'Equação 2: Nenhuma raiz real.';
+        }
+    } else {
+        alert('Não deixe campos em branco!');
+    }
+}
+
+
     function mudar(objeto , imagem){
         equacao.scr = imagem
     }
