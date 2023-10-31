@@ -28,42 +28,42 @@ function funcao_resposta(){/* */
 
     var contador = 0;
 
-    if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp10){/* */
+    if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp10){
 
-        if(resp1.value == "correta"){/* */
+        if(resp1.value == "correta"){
             document.getElementById("resp_correta_1").innerHTML = "Correta!";
             contador = +1;
         }
 
-        else{/* */
-            document.getElementById("resp_errada_1").innerHTML = "Errada!";
+        else{
+            document.getElementById("resp_errada_1").innerHTML = "Errada, porque não segue a fórmula padrão para encontrar as raízes de uma equação quadrática.";
         }
 
-        if(resp2.value == "correta"){/* */
+        if(resp2.value == "correta"){
             document.getElementById("resp_correta_2").innerHTMl = "Correta!";
             contador = +1;
         }
 
-        else{/* */
-            document.getElementById("resp_errada_2").innerHTML = "Errada!";
+        else{
+            document.getElementById("resp_errada_2").innerHTML = "Errada, ela não está relacionada ao discriminante e não é usada para determinar as raízes.";
         }
 
-        if(resp3.value == "Correta!"){/* */
+        if(resp3.value == "Correta!"){
             document.getElementById("resp_correta_3").innerHTML = "Correta!";
             contador = +1;
         }
     
-        else{/* */
-            document.getElementById("resp_errada_3").innerHTML = "Errada!";
+        else{
+            document.getElementById("resp_errada_3").innerHTML = "Errada, pois não refletem as possibilidades reais de soluções para equações do segundo grau. ";
         }
 
-        if(resp4.value == "Correta!"){/* */
+        if(resp4.value == "Correta!"){
             document.getElementById("resp_correta_4").innerHTML = "Correta!";
             contador = +1;
         }
 
-        else{/* */
-            document.getElementById("resp_errada_4").innerHTML = "Errada!";
+        else{
+            document.getElementById("resp_errada_4").innerHTML = "Errada, ";
         }
 
         if(resp5.value == "correta"){
@@ -72,7 +72,7 @@ function funcao_resposta(){/* */
         }
 
         else{
-            document.getElementById("resp_errada_5").innerHTML = "Errada!";
+            document.getElementById("resp_errada_5").innerHTML = "Errada, ";
         }
 
         if(resp6.value == "correta"){
@@ -81,7 +81,7 @@ function funcao_resposta(){/* */
 
         }
         else{
-            document.getElementById("resp_errada_6").innerHTML = "Errada!"; 
+            document.getElementById("resp_errada_6").innerHTML = "Errada,a equação tem 2 soluções reais que podem ser representadas como 2 valores diferentes de x, essa alternativa não apresenta isso "; 
         }
 
         if(resp7.value == "correta"){
@@ -90,7 +90,7 @@ function funcao_resposta(){/* */
         }
 
         else{
-            document.getElementById("resp_errada_7").innerHTML = "Errada!";
+            document.getElementById("resp_errada_7").innerHTML = "Errada, a equação tem uma única solução real, essa alternativa não apresenta isso";
         }
 
         if(resp8.value == "correta"){
@@ -98,7 +98,7 @@ function funcao_resposta(){/* */
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_8").innerHTML = "Errada!";
+            document.getElementById("resp_errada_8").innerHTML = "Errada,a equação não possui soluções reais, mas sim raízes complexas, essa alternativa não apresenta isso ";
         }
 
         if(resp9.value == "correta"){
@@ -107,7 +107,7 @@ function funcao_resposta(){/* */
         }
 
         else{
-            document.getElementById("resp_errada_9").innerHTML = "Errada!"; 
+            document.getElementById("resp_errada_9").innerHTML = "Errada,porque não reflete a relação correta entre as raízes e os coeficientes na fórmula geral de uma equa=ção="; 
         }
 
         if(resp10.value == "correta"){
@@ -116,7 +116,7 @@ function funcao_resposta(){/* */
         }
 
         else{
-            document.getElementById("resp_errada_10").innerHTML = "Errada!";
+            document.getElementById("resp_errada_10").innerHTML = "Errada, ";
         }
 
         document.getElementById("quantos_acertos").innerHTML = " Você acertou " + contador + " questões! ";
@@ -129,19 +129,19 @@ function funcao_resposta(){/* */
 }
 
 function verificarRespostas() {
-    // Equação 1
+    /*Equação 1*/
     var coefA1 = document.getElementById('coefA1').value;
     var coefB1 = document.getElementById('coefB1').value;
     var coefC1 = document.getElementById('coefC1').value;
     
-    // Equação 2
+    /*Equação 2*/
     var coefA2 = document.getElementById('coefA2').value;
     var coefB2 = document.getElementById('coefB2').value;
     var coefC2 = document.getElementById('coefC2').value;
 
-    // Verifique se todos os campos estão preenchidos
+    /*Verifique se todos os campos estão preenchidos*/
     if (coefA1 && coefB1 && coefC1 && coefA2 && coefB2 && coefC2) {
-        // Resolve as equações
+        /*Resolve as equações*/
         var discriminant1 = coefB1 * coefB1 - 4 * coefA1 * coefC1;
         var discriminant2 = coefB2 * coefB2 - 4 * coefA2 * coefC2;
 
@@ -168,7 +168,7 @@ function verificarRespostas() {
     }
 }
 
-
+/*código da imagem dinamica*/
     function mudar(objeto , imagem){
         equacao.scr = imagem
     }
