@@ -60,7 +60,7 @@ input {
 /*CÓDIGO DO MAIN*/
 
 main {
-    grid-area: princ; /* Define a área do grid para o conteúdo principal "main" */
+    grid-area:princ; /* Define a área do grid para o conteúdo principal "main" */
     margin: auto; /* Centraliza o conteúdo principal horizontalmente */
     background-color: rgb(255, 244, 244); /* Define a cor de fundo */
     border-radius: 30px; /* Define o raio de borda arredondada */
@@ -173,10 +173,4 @@ button:hover {
     background-color: #f0f0f0;
     padding: 20px;
     box-sizing: border-box;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .item {
-      flex: 0 0 calc(100% - 20px);
-    }
   }
