@@ -178,6 +178,8 @@ function verificarRespostas() {
 }
 
 /*código da imagem dinamica*/
-    function mudar(objeto , imagem){
-        objeto.scr = imagem;
-    }
+function mudar(id, novaImagem) {
+    var imagem = document.getElementById(id);
+    imagem.src = novaImagem;
+  }
+  

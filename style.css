@@ -70,6 +70,14 @@ main {
     font-family: 'EB Garamond'; /* Define a fonte */
 }
 
+#equacao {
+    margin: 50px ;
+    display: block;
+    border-radius: 40px;
+    width: 1400px; /* largura desejada */
+    height: auto; /* altura automática para manter a proporção */
+  }
+
 form {
     margin: 40px; /* Define uma margem de 40px para os formulários */
 } 
@@ -104,7 +112,7 @@ body {
 
 button {
     margin: 20px; /* Define uma margem de 20px para os botões */
-    background-color: rgb(255, 213, 213); /* Define a cor de fundo */
+    background-color: rgb(246, 148, 148); /* Define a cor de fundo */
     color: white; /* Define a cor do texto como branco */
     font-style: bold; /* Define o estilo da fonte como negrito (não é um atributo CSS válido) */
     font-family: 'EB Garamond'; /* Define a fonte */
